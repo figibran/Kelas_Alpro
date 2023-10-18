@@ -4,7 +4,7 @@
 int main() {
     system("cls");
     char jenisKelamin;
-    float beratBadan, TinggiBadan, bmi;
+    float BeratBadan, TinggiBadan, bmi;
 
     printf("\n=========Selamat Datang Di Kalkulator BMI Kelompok 7 TF3=========\n\n");
     printf("Masukkan jenis kelamin (L/P): ");
@@ -14,11 +14,11 @@ int main() {
     scanf("%f", &TinggiBadan);
 
     printf("Masukkan berat badan (Kg): ");
-    scanf("%f", &beratBadan);
+    scanf("%f", &BeratBadan);
 
     TinggiBadan = TinggiBadan / 100;
 
-    bmi = beratBadan/(TinggiBadan*TinggiBadan);  //rumus dari bmi
+    bmi = BeratBadan/(TinggiBadan*TinggiBadan);  //rumus dari bmi
 
     printf("\nNilai BMI: %.2f\n", bmi);
     
@@ -42,7 +42,7 @@ int main() {
         if (bmi >=18 && bmi <=25) {
             printf("Kategori berat badan: Badan Ideal\n");
             printf("==========Tetap Jaga Kesehatan Anda==========\n\n");
-        } else if (bmi<=18) {
+        } else if (bmi<18) {
             printf("Kategori berat badan: Badan Tidak Ideal\n");
             printf("==========Anda Terlalu Kurus==========\n\n");
         } else if (bmi>25) {

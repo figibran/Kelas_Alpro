@@ -21,11 +21,11 @@ int main() {
     double b = 2.0; // batas atas
     double N;
 
-    printf("Masukkan nilai N (jumlah blok): ");
+    printf("Masukkan nilai N (jumlah blok)\t: ");
     scanf("%lf", &N);
 
     // Hitung integral 
-    double integral_analitik = ((1.0 / 3.0) * (4 * pow(b, 3) + 7 * pow(b, 2) - 5 * f(b)) - (1.0 / 3.0) * (4 * pow(a, 3) + 7 * pow(a, 2) - 5 * f(a)));
+    double integral_analitik = ((1.0 / 3.0) * (4 * pow(b, 3) + 7 * pow(b, 2) - 5 * b) - (1.0 / 3.0) * (4 * pow(a, 3) + 7 * pow(a, 2) - 5 * a));
     double integral_numerik = trapezoid(a, b, N);
 
     // Outputkan hasil

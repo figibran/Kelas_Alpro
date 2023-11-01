@@ -12,7 +12,8 @@ double trapezoid(double a, double b, double N) {
         double x = a + i * h;
         hasil += f(x);
     }
-    return hasil * h;
+    hasil *= h;
+    return hasil;
 }
 
 int main() {
@@ -25,7 +26,7 @@ int main() {
     scanf("%lf", &N);
 
     // Hitung integral 
-    double integral_analitik = ((1.0 / 3.0) * (4 * pow(b, 3) + 7 * pow(b, 2) - 5 * b) - (1.0 / 3.0) * (4 * pow(a, 3) + 7 * pow(a, 2) - 5 * a));
+    double integral_analitik = ((4.0 / 3.0) * pow(b, 3) + (7.0 / 2.0) * pow(b, 2) - 5 * b) - ((4.0 / 3.0) * pow(a, 3) + (7.0 / 2.0) * pow(a, 2) - 5 * a);
     double integral_numerik = trapezoid(a, b, N);
 
     // Outputkan hasil

@@ -6,9 +6,9 @@ void main(){
 
     printf("=== Welcome to Awesome Program ===\n");
     printf("Username: ");
-    scanf("%s", username);
+    scanf("%s", &username);
     printf("Password: ");
-    scanf("%s", password);
+    scanf("%s", &password);
 
     if(strcmp(username, "petanikode") == 0){
         if(strcmp(password, "kopi") == 0){

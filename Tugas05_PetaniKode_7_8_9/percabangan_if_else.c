@@ -7,7 +7,7 @@ void main(){
 
     printf("==== Program Login ====\n");
     printf("Masukan password: ");
-    scanf("%s", password);
+    scanf("%s", &password);
 
     // percabangan if/esle
     if(strcmp(password, "kopi") == 0){

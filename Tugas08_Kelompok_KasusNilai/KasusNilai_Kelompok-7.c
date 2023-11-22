@@ -22,7 +22,7 @@ int main() {
     char hurufMutu[10], keterangan[50];
 
     printf("Masukkan nama mahasiswa: ");
-    scanf("%s", nama);
+    scanf("%s", &nama);
     printf("Masukkan NIM: ");
     scanf("%d", &nim);
     printf("Masukkan nilai tugas: ");
